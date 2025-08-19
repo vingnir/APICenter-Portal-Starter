@@ -8,12 +8,14 @@
 }
 
 .apiCard {
-	display: flex;
-	flex-direction: column;
-	padding: 1rem;
-	border-radius: 0.5rem;
-	box-shadow: 0 0 0.125rem 0 rgba(0, 0, 0, 0.24), 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.28);
-	cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: $surface;
+        box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        color: $grayXLight;
 
 	.content {
 		height: 100%;
@@ -25,37 +27,38 @@
 			font-weight: 600;
 		}
 
-		.tags {
-			display: flex;
-			gap: 0.75rem;
-			margin-bottom: 0.75rem;
+                .tags {
+                        display: flex;
+                        gap: 0.75rem;
+                        margin-bottom: 0.75rem;
 
-			span {
-				color: $gray;
-				font-size: 0.75rem;
-				font-style: normal;
-				font-weight: 700;
-				line-height: 1rem;
-				text-transform: uppercase;
+                        span {
+                                color: $gray;
+                                font-size: 0.75rem;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 1rem;
+                                text-transform: uppercase;
 
-				&:not(:last-of-type) {
-					padding-right: 0.75rem;
-					border-right: 1px solid $gray;
-				}
-			}
-		}
+                                &:not(:last-of-type) {
+                                        padding-right: 0.75rem;
+                                        border-right: 1px solid $gray;
+                                }
+                        }
+                }
 
-		.description {
-			font-size: 0.875rem;
-			font-weight: 400;
-			line-height: 1.25rem;
-			/* 142.857% */
-		}
-	}
+                .description {
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        line-height: 1.25rem;
+                        /* 142.857% */
+                        color: $gray;
+                }
+        }
 
-	.menuButton {
-		align-self: flex-end;
-	}
+        .menuButton {
+                align-self: flex-end;
+        }
 }
 
 .copiedTooltip {

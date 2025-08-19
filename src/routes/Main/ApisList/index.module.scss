@@ -43,18 +43,20 @@
 }
 
 .filtersActive {
-	display: flex;
-	gap: 1rem;
-	margin: 1rem 0 1.75rem;
-	flex-wrap: wrap;
+        display: flex;
+        gap: 1rem;
+        margin: 1rem 0 1.75rem;
+        flex-wrap: wrap;
 
-	.filterTag {
-		padding: 0.3rem 0.75rem;
-		border: solid 1px $grayLight;
-		border-radius: 0.25rem;
-		font-size: 0.875rem;
-		line-height: 1.25rem;
-		/* 142.857% */
+        .filterTag {
+                padding: 0.3rem 0.75rem;
+                border: solid 1px $grayLight;
+                background: $surface;
+                color: $grayXLight;
+                border-radius: 0.25rem;
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+                /* 142.857% */
 
 		b {
 			font-weight: 600;
@@ -67,11 +69,12 @@
 }
 
 .filtersClearAll {
-	font-size: 0.875rem;
-	font-weight: 600;
-	line-height: 1.25rem;
-	/* 142.857% */
-	text-decoration-line: underline;
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.25rem;
+        /* 142.857% */
+        text-decoration-line: underline;
+        color: $blue;
 }
 
 .emptyState {

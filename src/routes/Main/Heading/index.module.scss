@@ -1,10 +1,10 @@
 @import "/src/styles/index";
 
 .heading {
-	padding: 3.125rem 3.125rem 4rem;
-	background: linear-gradient(45deg, hsla(204, 65%, 71%, 1) 0%, hsla(273, 34%, 75%, 1) 43%, hsla(358, 43%, 75%, 1) 57%, hsla(43, 96%, 63%, 1) 100%);
-	color: white;
-	text-align: center;
+        padding: 3.125rem 3.125rem 4rem;
+        background: linear-gradient(145deg, #1f2937 0%, #111827 100%);
+        color: $grayXLight;
+        text-align: center;
 
 	h1 {
 		margin: 0 0 1rem;
@@ -29,9 +29,9 @@
 		line-height: 1.25rem;
 		/* 142.857% */
 
-		a {
-			color: white;
-			text-decoration: none;
+                a {
+                        color: $blue;
+                        text-decoration: none;
 
 			&:hover {
 				text-decoration: underline;
@@ -54,14 +54,14 @@
 		width: 100%;
 	}
 
-	.popup {
-		box-sizing: border-box;
-		position: absolute;
-		width: 100%;
-		background: white;
-		color: black;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
-		z-index: 1;
+        .popup {
+                box-sizing: border-box;
+                position: absolute;
+                width: 100%;
+                background: $surface;
+                color: $grayXLight;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+                z-index: 1;
 
 		.header {
 			display: flex;
@@ -103,25 +103,25 @@
 				font-size: 0.875rem;
 			}
 
-			&:hover {
-				background: $grayXLight;
+                        &:hover {
+                                background: $grayLight;
 
-				.recordDelete {
-					display: block;
-				}
-			}
+                                .recordDelete {
+                                        display: block;
+                                }
+                        }
 
-			.recordDelete {
-				display: none;
-				width: 2rem;
-				height: 2rem;
-				flex-shrink: 0;
-				background: #E1DFDD;
+                        .recordDelete {
+                                display: none;
+                                width: 2rem;
+                                height: 2rem;
+                                flex-shrink: 0;
+                                background: $grayLight;
 
-				&:hover {
-					background: $grayLight;
-				}
-			}
+                                &:hover {
+                                        background: $gray;
+                                }
+                        }
 			
 			.apiName,
 			.apiMeta {

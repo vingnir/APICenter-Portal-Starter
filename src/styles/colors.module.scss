@@ -1,13 +1,16 @@
-$blue: #115EA3;
-$blueLight: #0F6CBD;
-$blueButton: #6387E3;
-$gray: #616161;
-$grayDark: #242424;
-$grayLight: #D1D1D1;
-$grayXLight: #F3F2F1;
+$blue: #3ecf8e; // accent color
+$blueLight: #4ee9a3;
+$blueButton: #3ecf8e;
+$gray: #9ca3af;
+$grayDark: #1a1d1f; // page background
+$grayLight: #4b5563;
+$grayXLight: #f3f4f6;
+$surface: #262a33; // card and surface background
 
 :export {
-	// add color here, that you need to use in JSX
-	blueLight: $blueLight;
-	blueButton: $blueButton;
+        // add colors here that you need to use in JSX
+        blueLight: $blueLight;
+        blueButton: $blueButton;
+        surface: $surface;
+        textColor: $grayXLight;
 }
