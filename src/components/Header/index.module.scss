@@ -1,3 +1,5 @@
+@import "/src/styles";
+
 header {
     min-height: 3.75rem;
     max-width: 100rem;
@@ -7,6 +9,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: $grayDark;
+    color: $grayXLight;
 
     .logo {
         display: flex;
@@ -21,6 +25,7 @@ header {
     .headerLinks {
         a {
             margin: 0 .5rem;
+            color: $grayXLight;
 
             &:last-of-type {
                 margin-right: 0;
@@ -29,7 +34,7 @@ header {
     }
 
     .signupButtonWrapper {
-        border-left: 1px solid;
+        border-left: 1px solid $grayLight;
         padding-left: 1.5rem;
         margin-left: 1.5rem;
     }

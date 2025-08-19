@@ -16,15 +16,16 @@
 }
 
 .container {
-	box-sizing: border-box;
-	position: relative;
-	max-width: 38rem;
-	width: 90%;
-	height: 100%;
-	margin-left: auto;
-	padding: 2rem;
-	background: white;
-	box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+        box-sizing: border-box;
+        position: relative;
+        max-width: 38rem;
+        width: 90%;
+        height: 100%;
+        margin-left: auto;
+        padding: 2rem;
+        background: $surface;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, .6);
+        color: $grayXLight;
 	overflow-y: auto;
 
 	p {
@@ -90,10 +91,10 @@
 				text-decoration: underline;
 			}
 
-			&:disabled {
-				color: black;
-				pointer-events: none;
-			}
+                        &:disabled {
+                                color: $grayLight;
+                                pointer-events: none;
+                        }
 
 			svg {
 				margin-right: .375rem;
